@@ -9,7 +9,7 @@ const msgTwo = document.querySelector('#msgTwo')
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()
   const location = searchIput.value
-  fetch('http://localhost:3000/weather?address=' + location).then((respose) => {
+  fetch('/weather?address=' + location).then((respose) => {
     respose.json().then((data) => {
       if (data.error) {
         return msgOne.textContent = data.error

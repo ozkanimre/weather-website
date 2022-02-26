@@ -33,7 +33,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about', {
     title: 'about page',
-    desc: 'about page description , about page description ,about page description',
+    desc: 'this site is made by ozkanimre and it uses mapbox.com and weatherstack.com ',
     name: 'Özkan'
   })
 })
